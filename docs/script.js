@@ -42,33 +42,6 @@ fetch("portfolio.html")
   });
 
 
-
-// function activateFilters() {
-//     const buttons = document.querySelectorAll(".filter-btn");
-//     const items = document.querySelectorAll(".portfolio-item");
-
-//     buttons.forEach(btn => {
-//         btn.addEventListener("click", () => {
-
-//             // update button active state
-//             buttons.forEach(b => b.classList.remove("active"));
-//             btn.classList.add("active");
-
-//             const filter = btn.getAttribute("data-filter");
-
-//             items.forEach(item => {
-//                 const category = item.getAttribute("data-category");
-
-//                 if (filter === "All" || category === filter) {
-//                     item.style.display = "block";
-//                 } else {
-//                     item.style.display = "none";
-//                 }
-//             });
-//         });
-//     });
-// }
-
 function sortPortfolioItems() {
     const grids = document.querySelectorAll(".thumbnails-grid");
 
