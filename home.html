@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Thio Fahrizqi</title>
+  <link rel="stylesheet" href="css\style.css">
+  <link 
+  href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;700&family=Space+Grotesk:wght@300;400;500;700&display=swap" 
+  rel="stylesheet"
+  />
+
+</head>
+
+<body>
+  <div id="app">
+    <nav>
+      <div class="nav-name">Thio Fahrizqi</div>
+      <div class="nav-title">Physics · Data · Climate</div>
+      <ul class="nav-links">
+        <li><a href="#" class="active" data-page="about"><span class="nav-dot"></span>About</a></li>
+        <li><a href="#" data-page="resume"><span class="nav-dot"></span>Resume</a></li>
+        <li><a href="#" data-page="portfolio"><span class="nav-dot"></span>Portfolio</a></li>
+      </ul>
+      <div class="nav-footer">
+        <a href="mailto:thiofahr@gmail.com">thiofahr@gmail.com</a><br>
+        <a href="https://github.com/thiofahr" target="_blank">github.com/thiofahr</a>
+      </div>
+      <button id="theme-toggle" aria-label="Toggle dark mode"><span id="theme-icon">⏾</span></button>
+    </nav>
+    <div id="pages">
+
+      <!-- ── About ── -->
+      <section class="page active" id="page-about">
+        <div class="page-inner">
+          <div class="page-label">01 — About</div>
+          <h1 class="hero">Hi, I'm <em>Thio</em>.</h1>
+          <div class="about-intro">
+            <div class="about-avatar">
+              <img src="assets/profile.png" alt="Profile Picture">
+            </div>
+            <div class="about-bio">
+              <p>I'm a physics graduate from Universitas Padjadjaran with interest in climate dynamics, energy transition, and science communication. 
+                 My research at BRIN examined equatorial wave energy patterns during the 2023/24 El Niño event using FFT-EOF methods. I've also contributed to the energy
+                 modelling effort of IESR as a research intern, along with methane emission analysis from coal and oil & gas sectors in Indonesia. 
+              </p>
+            </div>
+          </div>
+          <p>
+            I'm drawn to problems where physical science, data analysis, and real-world decision-making meet, 
+            whether that's reducing uncertainty in climate projections, modeling energy systems, or translating research into 
+            forms that communities can act on. 
+          </p>
+          <p>
+            Alongside research, I've been a member of <a href="https://www.instagram.com/pps_society/" target="_blank">Pajajaran Physical Society</a> since 2023,
+            writing about physics and climate, running science outreach for high school students, and now serving on the Board of Directors. 
+            I also co-wrote a climate change book for children and contributed to a patent of a photobioreactor for carbon capture.
+          </p>
+
+          <div class="graph-section">
+            <div class="graph-title">Experience Network</div>
+            <div class="graph-desc">An interactive map of how my interests, experiences, and skills connect. Hover or tap a node to explore.</div>
+            <div class="graph-wrap">
+              <canvas id="graph-canvas"></canvas>
+              <div id="graph-tooltip"><div class="gtt-inner"><div class="gtt-label" id="gtt-label"></div><div class="gtt-desc" id="gtt-desc"></div></div></div>
+              <div id="graph-zoom">
+                <button id="zoom-in" aria-label="Zoom in">+</button>
+                <button id="zoom-out" aria-label="Zoom out">−</button>
+              </div>
+              <div id="graph-hint">scroll — zoom<br>hover — explore</div>
+            </div>
+            <div id="graph-legend"></div>
+          </div>
+
+          <div class="updates-section">
+            <div class="graph-title">Updates</div>
+            <div class="graph-desc">What I've been up to lately.</div>
+            <div class="updates-list">
+              <div class="update-item">
+                <div class="update-date">Mar 2026</div>
+                <div class="update-content">
+                  <div class="update-title">New Magazine Issue</div>
+                  <p>Published a new issue of the Pajajaran Physical Society magazine on climate extremes and local impacts in Indonesia.</p>
+                  <a href="#" target="_blank">Read →</a>
+                </div>
+              </div>
+              <div class="update-item">
+                <div class="update-date">Feb 2026</div>
+                <div class="update-content">
+                  <div class="update-title">Started a Substack</div>
+                  <p>Writing about climate science, data, and ideas at the intersection of physics and the environment.</p>
+                  <a href="#" target="_blank">Subscribe →</a>
+                </div>
+              </div>
+              <div class="update-item">
+                <div class="update-date">Jan 2026</div>
+                <div class="update-content">
+                  <div class="update-title">Thesis Submitted</div>
+                  <p>Submitted my undergraduate thesis on equatorial wave energy during the 2023/24 El Niño using the FFT-EOF approach.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="mobile-footer">
+            <a href="mailto:thiofahr@gmail.com">thiofahr@gmail.com</a>
+            <a href="https://github.com/thiofahr" target="_blank">github.com/thiofahr</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- ── Resume ── -->
+      <section class="page" id="page-resume">
+        <div class="page-inner">
+          <div class="page-label">02 — Resume</div>
+          <h1 class="hero">Experience &amp; <em>Education</em></h1>
+          <h2 class="section-title">Education</h2>
+          <div class="timeline">
+            <div class="timeline-item">
+              <div class="t-date">2021 — 2025</div>
+              <div class="t-content">
+                <h3>Bachelor's Degree in Physics</h3>
+                <div class="t-org">Universitas Padjadjaran</div>
+                <ul>
+                  <li>GPA: 3.78 / 4.00</li>
+                  <li>Thesis: Analysis of Equatorial Waves Energy during the 2023/24 El Niño Using the FFT-EOF Approach</li>
+                  <li>Activities: Physics Student Association, Unpad Runner, the 2024 National Student Scientific Week (PIMNAS)</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <h2 class="section-title">Work Experience</h2>
+          <div class="timeline">
+            <div class="timeline-item">
+              <div class="t-date">May 2025 —<br>Sep 2025</div>
+              <div class="t-content">
+                <h3>Research Intern</h3>
+                <div class="t-org">Institute for Essential Services Reform (IESR)</div>
+                <ul>
+                  <li>Assisted in data processing for energy system modelling, including data collection, cleaning, and model conceptualization based on the latest Indonesia' Electricity Bill for the 2025-2034 period.</li>
+                  <li>Assisted research on private transportation usage in Indonesia and methane emission from coal and oil &amp; gas industries.</li>
+                </ul>
+              </div>
+            </div>
+            <div class="timeline-item">
+              <div class="t-date">Aug 2024 —<br>Jan 2025</div>
+              <div class="t-content">
+                <h3>Research Internship</h3>
+                <div class="t-org">National Research and Innovation Agency of Indonesia (BRIN)</div>
+                <ul>
+                  <li>Worked on research around equatorial waves during the 2023/24 El Niño event.</li>
+                  <li>Attended Introduction to Meteorology classes and climate/weather seminars.</li>
+                </ul>
+              </div>
+            </div>
+            <div class="timeline-item">
+              <div class="t-date">Feb 2023 —<br>Present</div>
+              <div class="t-content">
+                <h3>Content Writer &amp; Board of Director</h3>
+                <div class="t-org">Pajajaran Physical Society</div>
+                <ul>
+                  <li>Write and design physics articles on fluid dynamics, aerodynamics, climate, and more.</li>
+                  <li>Conducted physics experiments for high school students and university freshmen (2024).</li>
+                  <li>Appointed head of content writers for 2025; joined Board of Director since January 2025.</li>
+                </ul>
+              </div>
+            </div>
+            <div class="timeline-item">
+              <div class="t-date">Feb 2023 —<br>Dec 2024</div>
+              <div class="t-content">
+                <h3>Laboratory Teaching Assistant</h3>
+                <div class="t-org">Department of Physics, Universitas Padjadjaran</div>
+                <ul>
+                  <li>Taught ~100 students across 4 practical courses: Instrumentation, Electronics, and Programming.</li>
+                  <li>Head of Teaching Assistant for the Programming Course (Aug 2023 – Jun 2024).</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <h2 class="section-title">Skills</h2>
+          <div class="skills-grid">
+            <div class="skill-chip"><strong>Languages</strong>English (C1 · IELTS 7.0) · Indonesian (Native)</div>
+            <div class="skill-chip"><strong>Programming</strong>Python · R · SQL · Apps Script · NCL</div>
+            <div class="skill-chip"><strong>Analysis</strong>Data Analysis · Geospatial · Signal Processing · Statistical Methods</div>
+            <div class="skill-chip"><strong>ML &amp; Viz</strong>Machine Learning · Data Visualization · Tableau</div>
+            <div class="skill-chip"><strong>Design</strong>Figma · Graphic Design · Science Communication</div>
+            <div class="skill-chip"><strong>Tools</strong>Google Workspace · Microsoft Workspace · Power BI · Arduino / IoT</div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ── Portfolio ── -->
+      <section class="page" id="page-portfolio">
+        <div class="page-inner">
+          <div class="page-label">03 — Portfolio</div>
+          <h1 class="hero">Projects &amp; <em>Work</em></h1>
+          <h2 class="section-title" style="margin-top:0;border-top:none;padding-top:0">Research</h2>
+          <div class="research-item">
+            <div class="ri-type">Undergraduate Thesis</div>
+            <div class="ri-title">Analysis of Equatorial Waves Energy during the 2023/24 El Niño Using the FFT-EOF Approach</div>
+            <div class="ri-meta">Author: Thio Fahrizqi · 2025</div>
+          </div>
+          <div class="research-item">
+            <div class="ri-type">In Preparation</div>
+            <div class="ri-title">Investigating the projection of precipitation whiplash occurrence over the Indonesian Maritime Continent based on CMIP6 simulation</div>
+            <div class="ri-meta">In preparation · 2025</div>
+          </div>
+          <h2 class="section-title">Projects</h2>
+          <div class="projects-grid">
+            <a class="project-card" href="https://www.researchgate.net/publication/395674371" target="_blank">
+              <div class="pc-tag">IoT · Hardware</div>
+              <div class="pc-title">Photobioreactor as Carbon Capture</div>
+              <p class="pc-desc">IoT-integrated Spirulina Sp. photobioreactor prototype with RO/PDMS membrane and micro-nano bubbles for carbon capture. Submitted to PIMNAS 2024.</p>
+              <div class="pc-link">Patent no. S00202409022 ↗</div>
+            </a>
+            <a class="project-card" href="https://drive.google.com/file/d/1km-bc4tzjv1O0_UCEXI3fDd0IiTpuS1Z/view" target="_blank">
+              <div class="pc-tag">Writing · Education</div>
+              <div class="pc-title">Climate Change Book</div>
+              <p class="pc-desc">Educational book for students aged 10–12, covering the basics of climate change, adaptation, and mitigation. Part of the Green Welfare initiative.</p>
+              <div class="pc-link">View Report ↗</div>
+            </a>
+            <a class="project-card" href="https://online.fliphtml5.com/pps_society/Jupyter-Magazine" target="_blank">
+              <div class="pc-tag">Science Comm · Writing</div>
+              <div class="pc-title">Physics Magazine</div>
+              <p class="pc-desc">
+                I contributed to the articles on the imagining the light-speed travel, 
+                the record-breaking temperatures of 2024, 
+                and and the life and contributions of physicist Lise Meitner.</p>
+              <div class="pc-link">Read the Magazine ↗</div>
+            </a>
+            <div class="project-card" style="cursor:default">
+              <div class="pc-tag">Data Science</div>
+              <div class="pc-title">Data Visualizations</div>
+              <p class="pc-desc">Collection of data visualizations and analyses on topics spanning climate, energy, physics, and sports — built with Python, R, and Tableau.</p>
+              <div class="pc-link" style="color:var(--faint)">Coming soon</div>
+            </div>
+
+            
+          </div>
+        </div>
+      </section>
+    </div>
+  </div>
+
+  <!-- Graph Data -->
+  <script src="data/graph-data.js" defer></script>
+
+  <!-- UI -->
+  <script src="js/navigation.js" defer></script>
+  <script src="js/theme.js" defer></script>
+
+  <!-- Graph -->
+  <script src="js/graph.js" defer></script>
+
+  <!-- App Initialization -->
+  <script src="js/main.js" defer></script>
+
+
+
+</body>
+</html>
