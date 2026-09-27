@@ -1,11 +1,22 @@
-// ── Navigation ─────────────────────────────────────────────
-document.querySelectorAll('.nav-links a').forEach(link => {
-  link.addEventListener('click', e => {
-    e.preventDefault();
+const pageLinks = document.querySelectorAll('[data-page]');
+const pages = document.querySelectorAll('.page');
+
+function showPage(target) {
+  pages.forEach(page => page.classList.toggle('active', page.id === `page-${target}`));
+  document.querySelectorAll('.nav-link').forEach(link => {
+    link.classList.toggle('active', link.dataset.page === target);
+  });
+  document.body.classList.toggle('about-active', target === 'about');
+  window.scrollTo({ top: 0, behavior: 'instant' });
+}
+
+pageLinks.forEach(link => {
+  link.addEventListener('click', event => {
     const target = link.dataset.page;
-    document.querySelectorAll('.nav-links a').forEach(l => l.classList.remove('active'));
-    document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
-    link.classList.add('active');
-    document.getElementById('page-' + target).classList.add('active');
+    if (!target) return;
+    event.preventDefault();
+    showPage(target);
   });
 });
+
+document.body.classList.add('about-active');

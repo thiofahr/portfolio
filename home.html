@@ -3,259 +3,487 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portfolio of Thio Fahrizqi — physics, climate, data, and research.">
   <title>Thio Fahrizqi</title>
-  <link rel="stylesheet" href="css\style.css">
-  <link 
-  href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;700&family=Space+Grotesk:wght@300;400;500;700&display=swap" 
-  rel="stylesheet"
-  />
-
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
 </head>
-
 <body>
-  <div id="app">
-    <nav>
-      <div class="nav-name">Thio Fahrizqi</div>
-      <div class="nav-title">Physics · Data · Climate</div>
-      <ul class="nav-links">
-        <li><a href="#" class="active" data-page="about"><span class="nav-dot"></span>About</a></li>
-        <li><a href="#" data-page="resume"><span class="nav-dot"></span>Resume</a></li>
-        <li><a href="#" data-page="portfolio"><span class="nav-dot"></span>Portfolio</a></li>
-      </ul>
-      <div class="nav-footer">
-        <a href="mailto:thiofahr@gmail.com">thiofahr@gmail.com</a><br>
-        <a href="https://github.com/thiofahr" target="_blank">github.com/thiofahr</a>
-      </div>
-      <button id="theme-toggle" aria-label="Toggle dark mode"><span id="theme-icon">⏾</span></button>
-    </nav>
-    <div id="pages">
+  <header class="site-header">
+    <div class="site-identity">
+      <button class="site-name" data-page="about" aria-label="Go to About">Thio Fahrizqi</button>
+      <nav class="nav-links" aria-label="Primary navigation">
+        <button class="nav-link active" data-page="about">About</button>
+        <button class="nav-link" data-page="experiences">Experiences</button>
+        <button class="nav-link" data-page="projects">Projects</button>
+        <button class="nav-link" data-page="dataviz">Data Viz</button>
+      </nav>
+    </div>
+    
+  </header>
 
-      <!-- ── About ── -->
-      <section class="page active" id="page-about">
-        <div class="page-inner">
-          <div class="page-label">01 — About</div>
-          <h1 class="hero">Hi, I'm <em>Thio</em>.</h1>
-          <div class="about-intro">
-            <div class="about-avatar">
-              <img src="assets/profile.png" alt="Profile Picture">
+
+  <main id="pages">
+
+    <!-- ABOUT -->
+    <section class="page page-about active" id="page-about" aria-labelledby="about-title">
+
+      <div class="about-grid">
+
+        <div class="about-copy">
+          <h1 id="about-title">Hi, I'm <em>Thio</em>.</h1>
+
+          <p class="about-lead">
+            A physics graduate interested in climate dynamics, data analysis,
+            and environmental research.
+          </p>
+
+          <p>
+            My work sits at the intersection of physical science and computation,
+            with experience spanning climate variability, extreme events,
+            energy systems, and science communication.
+          </p>
+
+          <p>
+            I am particularly interested in understanding climate extremes over
+            Indonesia and turning complex scientific data into clear, useful
+            visual stories.
+          </p>
+        </div>
+
+        <div class="about-visual">
+          <img
+            src="assets/profile.png"
+            alt="Portrait of Thio Fahrizqi"
+          >
+        </div>
+
+      </div>
+
+      <!-- Bottom section -->
+      <footer class="about-footer">
+
+        <div class="about-location">
+          <span>Indonesia</span>
+          <span>© 2026 Thio Fahrizqi</span>
+        </div>
+
+        <div class="about-links">
+          <a href="mailto:your-email@example.com">Email</a>
+          <a href="https://github.com/yourusername" target="_blank" rel="noopener">
+            GitHub
+          </a>
+        </div>
+
+      </footer>
+
+    </section>
+
+    <!-- EXPERIENCES -->
+    <section class="page" id="page-experiences" aria-labelledby="experiences-title">
+      <div class="page-container">
+
+        <div class="page-heading-row">
+          <h1 id="experiences-title">Experiences</h1>
+          <span class="page-index">02</span>
+        </div>
+
+        <!-- WORK -->
+        <section class="experience-section">
+          <h2 class="section-label">Work</h2>
+
+          <div class="experience-list">
+
+            <article class="experience-item">
+              <div class="experience-org">
+                <h2>IESR</h2>
+                <span>May 2025 — Sep 2025</span>
+              </div>
+
+              <div class="experience-detail">
+                <h3>Research Intern</h3>
+                <ul>
+                  <li>Supported research on Indonesia's national electricity plan (RUPTL 2025–2034)
+                     by analyzing and modelling projections of electricity generation and demand data, 
+                     contributing to the 
+                     <a href="https://iesr.or.id/en/pustaka/indonesia-energy-transition-outlook-ieto-2026/">Indonesia Energy Transition Outlook 2026</a>.</li>
+                  <li>Worked on research involving private transportation use and 
+                    <a href="https://public.tableau.com/views/MethaneIndonesia/Dashboard1?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link">
+                      methane emissoins from coal and oil &amp; gas sectors
+                    </a>.</li>
+                </ul>
+              </div>
+            </article>
+
+            <article class="experience-item">
+              <div class="experience-org">
+                <h2>BRIN</h2>
+                <span>Aug 2024 — Jan 2025</span>
+              </div>
+
+              <div class="experience-detail">
+                <h3>Research Intern</h3>
+                <ul>
+                  <li>Studied equatorial wave energy and physical processes associated with the 2023/24 El Niño event, 
+                    by applying principal component analysis (PCA) and signal filtering methods.</li>
+                  <li>Worked with ocean and atmospheric datasets and attended meteorology and climate research seminars.</li>
+                </ul>
+              </div>
+            </article>
+
+            <article class="experience-item">
+              <div class="experience-org">
+                <h2>Pajajaran Physical Society</h2>
+                <span>Feb 2023 — Dec 2025</span>
+              </div>
+
+              <div class="experience-detail">
+                <h3>Content Writer &amp; Board of Director</h3>
+                <ul>
+                  <li>Write and design physics articles covering fluid dynamics, aerodynamics, climate, and related topics.</li>
+                  <li>Conducted physics experiments and outreach activities for high-school students and university freshmen.</li>
+                  <li>Led the content writer team and joined the Board of Directors in 2025.</li>
+                </ul>
+              </div>
+            </article>
+
+            <article class="experience-item">
+              <div class="experience-org">
+                <h2>Universitas Padjadjaran</h2>
+                <span>Feb 2023 — Dec 2024</span>
+              </div>
+
+              <div class="experience-detail">
+                <h3>Laboratory Teaching Assistant</h3>
+                <ul>
+                  <li>Taught approximately 100 students across instrumentation, electronics, and programming practical courses.</li>
+                  <li>Served as Head of Teaching Assistants for the Programming Course from Aug 2023 to Jun 2024.</li>
+                </ul>
+              </div>
+            </article>
+
+          </div>
+        </section>
+
+        <!-- ACADEMICS -->
+        <section class="experience-section academics-section">
+          <h2 class="section-label">Academics</h2>
+
+          <div class="experience-list">
+
+            <article class="experience-item education-item">
+              <div class="experience-org">
+                <h2>Universitas Padjadjaran</h2>
+                <span>2021 — 2025</span>
+              </div>
+
+              <div class="experience-detail">
+                <h3>B.Sc. Physics</h3>
+                <ul>
+                  <li>GPA 3.78 / 4.00 · Dean's List 2024.</li>
+                  <li>Thesis: Analysis of Equatorial Waves Energy during the 2023/24 El Niño Using the FFT-EOF Approach.</li>
+                </ul>
+              </div>
+            </article>
+
+          </div>
+        </section>
+
+        <!-- SKILLS -->
+        <section class="skills-section">
+
+          <h2 class="section-label">Skills</h2>
+
+          <div class="skills-list">
+
+            <div class="skills-category">
+              <div class="skills-label">Programming</div>
+              <div class="skills-text">
+                <span>Python</span>
+                <!-- <span>R</span> -->
+                <span>PostgreSQL</span>
+                <!-- <span>NCL</span> -->
+                <!-- <span>MATLAB</span> -->
+              </div>
             </div>
-            <div class="about-bio">
-              <p>I'm a physics graduate from Universitas Padjadjaran with interest in climate dynamics, energy transition, and science communication. 
-                 My research at BRIN examined equatorial wave energy patterns during the 2023/24 El Niño event using FFT-EOF methods. I've also contributed to the energy
-                 modelling effort of IESR as a research intern, along with methane emission analysis from coal and oil & gas sectors in Indonesia. 
+
+            <div class="skills-category">
+              <div class="skills-label">Geospatial Data Analysis</div>
+              <div class="skills-text">
+                <span>Google Earth Engine (Python API)</span>
+                <span>Geospatial Analysis using Python (xarray, xeofs, dask, rioaxarray, xesmf)</span>
+                <!-- <span>Remote Sensing</span>
+                <span>GIS</span> -->
+              </div>
+            </div>
+
+            <div class="skills-category">
+              <div class="skills-label">Data Visualization</div>
+              <div class="skills-text">
+                <span>Scientific Visualization</span>
+                <span>Climate Maps</span>
+                <span>Statistical Graphics</span>
+                <span>Data Storytelling</span>
+                <span>Matplotlib, Seaborn, Plotly, Datawrapper</span>
+              </div>
+            </div>
+
+            <div class="skills-category">
+              <div class="skills-label">Statistics &amp; Data Analysis</div>
+              <div class="skills-text">
+                <span>Extreme Value Theory</span>
+                <span>Trend Analysis</span>
+                <span>Distribution Analysis</span>
+                <span>PCA</span>
+                <span>Regression Analysis</span>
+                <span>Applied Statistics</span>
+              </div>
+            </div>
+
+            <div class="skills-category">
+              <div class="skills-label">Climate &amp; Environmental Analysis</div>
+              <div class="skills-text">
+                <span>Climate Extremes</span>
+                <span>Climate Variability</span>
+                <span>Ocean–Atmosphere Interactions</span>
+                <span>IPCC Risk Framework</span>
+                <span>Climate Data Analysis</span>
+              </div>
+            </div>
+
+            <div class="skills-category">
+              <div class="skills-label">Software &amp; Tools</div>
+              <div class="skills-text">
+                <span>Git</span>
+                <span>GitHub</span>
+                <span>Jupyter</span>
+                <span>VS Code</span>
+              </div>
+            </div>
+
+            <div class="skills-category">
+              <div class="skills-label">Science Communication</div>
+              <div class="skills-text">
+                <span>Scientific Writing</span>
+                <span>Science Communication</span>
+                <span>Educational Content</span>
+              </div>
+            </div>
+
+          </div>
+
+        </section>
+
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section class="page" id="page-projects" aria-labelledby="projects-title">
+      <div class="page-heading-row">
+          <h1 id="project-title">Projects</h1>
+          <span class="page-index">03</span>
+      </div>
+
+      <div class="project-list">
+
+
+          <a class="project-row" href="#">
+              <span class="project-number">01</span>
+
+              <div class="project-thumbnail">
+                  <img src="assets/projects/compound-extremes.svg"
+                      alt="Compound hot-dry extremes visualization">
+              </div>
+
+              <div class="project-info">
+                  <span class="project-type">Climate · Urban Heat</span>
+                  <h2>Thermal Inequalities in Indonesian Cities</h2>
+                  <p>
+                      Exploring the inequalities in heat exposure across Indonesian cities using landsat and NDMI. 
+                  </p>
+              </div>
+
+              <span class="project-arrow">↗</span>
+          </a>        
+
+          <a class="project-row" 
+              href="https://github.com/thiofahr/Compound-Hot-Dry-Extremes"
+              target="_blank">
+              <span class="project-number">02</span>
+
+              <div class="project-thumbnail">
+                  <img src="assets/projects/compound-extremes.svg"
+                      alt="Compound hot-dry extremes visualization">
+              </div>
+
+              <div class="project-info">
+                  <span class="project-type">Climate · CMIP6 · Extreme Events</span>
+                  <h2>Compound Hot-Dry Extremes in Indonesia</h2>
+                  <p>
+                      Investigating projected changes in compound hot-dry extremes
+                      over Indonesia using CMIP6 climate simulations, with a focus
+                      on frequency, duration, magnitude, and time of emergence.
+                  </p>
+              </div>
+
+              <span class="project-arrow">↗</span>
+          </a>
+
+          <a class="project-row"
+              href="https://antroposen.substack.com/p/karhutla-2026-dalam-data"
+              target="_blank">
+              <span class="project-number">03</span>
+
+              <div class="project-thumbnail">
+                  <img src="assets/dataviz/fwi/fwi-01.png"
+                      alt="FWI in August 2026">
+              </div>
+
+              <div class="project-info">
+                  <span class="project-type">Climate · Extreme Events · ERA5</span>
+                  <h2>Understanding Kalimantan's 2026 forest and land fires through data</h2>
+                  <p>
+                    Analyzing fire weather conditions during the 2026 forest and land fires 
+                    in Kalimantan using daily Fire Weather Index data from ERA5.
+                  </p>
+              </div>
+
+              <span class="project-arrow">↗</span>
+          </a>
+
+          <a class="project-row"
+            href="https://www.researchgate.net/publication/395674371_IoT_Integrated_Microalgae_Photobioreactor_with_Modified_PDMS-Coated_RO_Membrane_and_Micronanobubbles"
+            target="_blank"
+            rel="noreferrer">
+
+            <span class="project-number">04</span>
+
+            <div class="project-thumbnail">
+              <img src="assets/projects/photobioreactor.svg"
+                  alt="Photobioreactor project">
+            </div>
+
+            <div class="project-info">
+              <span class="project-type">IoT · Hardware</span>
+              <h2>Photobioreactor as Carbon Capture</h2>
+              <p>
+                IoT-integrated Spirulina photobioreactor prototype for carbon capture.
+                <span class="project-link-label">Patent ↗</span>
               </p>
             </div>
-          </div>
-          <p>
-            I'm drawn to problems where physical science, data analysis, and real-world decision-making meet, 
-            whether that's reducing uncertainty in climate projections, modeling energy systems, or translating research into 
-            forms that communities can act on. 
-          </p>
-          <p>
-            Alongside research, I've been a member of <a href="https://www.instagram.com/pps_society/" target="_blank">Pajajaran Physical Society</a> since 2023,
-            writing about physics and climate, running science outreach for high school students, and now serving on the Board of Directors. 
-            I also co-wrote a climate change book for children and contributed to a patent of a photobioreactor for carbon capture.
-          </p>
 
-          <div class="graph-section">
-            <div class="graph-title">Experience Network</div>
-            <div class="graph-desc">An interactive map of how my interests, experiences, and skills connect. Hover or tap a node to explore.</div>
-            <div class="graph-wrap">
-              <canvas id="graph-canvas"></canvas>
-              <div id="graph-tooltip"><div class="gtt-inner"><div class="gtt-label" id="gtt-label"></div><div class="gtt-desc" id="gtt-desc"></div></div></div>
-              <div id="graph-zoom">
-                <button id="zoom-in" aria-label="Zoom in">+</button>
-                <button id="zoom-out" aria-label="Zoom out">−</button>
-              </div>
-              <div id="graph-hint">scroll — zoom<br>hover — explore</div>
-            </div>
-            <div id="graph-legend"></div>
-          </div>
+            <span class="project-arrow">↗</span>
 
-          <div class="updates-section">
-            <div class="graph-title">Updates</div>
-            <div class="graph-desc">What I've been up to lately.</div>
-            <div class="updates-list">
-              <div class="update-item">
-                <div class="update-date">Mar 2026</div>
-                <div class="update-content">
-                  <div class="update-title">New Magazine Issue</div>
-                  <p>Published a new issue of the Pajajaran Physical Society magazine on climate extremes and local impacts in Indonesia.</p>
-                  <a href="#" target="_blank">Read →</a>
-                </div>
-              </div>
-              <div class="update-item">
-                <div class="update-date">Feb 2026</div>
-                <div class="update-content">
-                  <div class="update-title">Started a Substack</div>
-                  <p>Writing about climate science, data, and ideas at the intersection of physics and the environment.</p>
-                  <a href="#" target="_blank">Subscribe →</a>
-                </div>
-              </div>
-              <div class="update-item">
-                <div class="update-date">Jan 2026</div>
-                <div class="update-content">
-                  <div class="update-title">Thesis Submitted</div>
-                  <p>Submitted my undergraduate thesis on equatorial wave energy during the 2023/24 El Niño using the FFT-EOF approach.</p>
-                </div>
-              </div>
-            </div>
-          </div>
+          </a>
 
-          <div class="mobile-footer">
-            <a href="mailto:thiofahr@gmail.com">thiofahr@gmail.com</a>
-            <a href="https://github.com/thiofahr" target="_blank">github.com/thiofahr</a>
-          </div>
+          <a class="project-row" 
+             href="https://drive.google.com/file/d/1km-bc4tzjv1O0_UCEXI3fDd0IiTpuS1Z/view?usp=sharing"
+             target="_blank"
+             rel="noreferrer">
+              <span class="project-number">05</span>
+
+              <div class="project-thumbnail">
+                  <img src="assets/projects/climate-book.png"
+                      alt="Climate change book">
+              </div>
+
+              <div class="project-info">
+                  <span class="project-type">Writing · Education</span>
+                  <h2>Climate Change Book</h2>
+                  <p>
+                      Educational material on climate change, adaptation, and mitigation
+                      for students aged 10–12.
+                  </p>
+              </div>
+
+              <span class="project-arrow">↗</span>
+          </a>
+
+      </div>
+    </section>
+
+    <!-- DATA VIZ -->
+    <section class="page" id="page-dataviz" aria-labelledby="dataviz-title">
+      <div class="page-container">
+        <div class="page-heading-row">
+          <h1 id="dataviz-title">Data Viz</h1>
+          <span class="page-index">04</span>
+          
+          
         </div>
-      </section>
+        <p>Click on the image to explore more.</p>
 
-      <!-- ── Resume ── -->
-      <section class="page" id="page-resume">
-        <div class="page-inner">
-          <div class="page-label">02 — Resume</div>
-          <h1 class="hero">Experience &amp; <em>Education</em></h1>
-          <h2 class="section-title">Education</h2>
-          <div class="timeline">
-            <div class="timeline-item">
-              <div class="t-date">2021 — 2025</div>
-              <div class="t-content">
-                <h3>Bachelor's Degree in Physics</h3>
-                <div class="t-org">Universitas Padjadjaran</div>
-                <ul>
-                  <li>GPA: 3.78 / 4.00</li>
-                  <li>Thesis: Analysis of Equatorial Waves Energy during the 2023/24 El Niño Using the FFT-EOF Approach</li>
-                  <li>Activities: Physics Student Association, Unpad Runner, the 2024 National Student Scientific Week (PIMNAS)</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-          <h2 class="section-title">Work Experience</h2>
-          <div class="timeline">
-            <div class="timeline-item">
-              <div class="t-date">May 2025 —<br>Sep 2025</div>
-              <div class="t-content">
-                <h3>Research Intern</h3>
-                <div class="t-org">Institute for Essential Services Reform (IESR)</div>
-                <ul>
-                  <li>Assisted in data processing for energy system modelling, including data collection, cleaning, and model conceptualization based on the latest Indonesia' Electricity Bill for the 2025-2034 period.</li>
-                  <li>Assisted research on private transportation usage in Indonesia and methane emission from coal and oil &amp; gas industries.</li>
-                </ul>
-              </div>
-            </div>
-            <div class="timeline-item">
-              <div class="t-date">Aug 2024 —<br>Jan 2025</div>
-              <div class="t-content">
-                <h3>Research Internship</h3>
-                <div class="t-org">National Research and Innovation Agency of Indonesia (BRIN)</div>
-                <ul>
-                  <li>Worked on research around equatorial waves during the 2023/24 El Niño event.</li>
-                  <li>Attended Introduction to Meteorology classes and climate/weather seminars.</li>
-                </ul>
-              </div>
-            </div>
-            <div class="timeline-item">
-              <div class="t-date">Feb 2023 —<br>Present</div>
-              <div class="t-content">
-                <h3>Content Writer &amp; Board of Director</h3>
-                <div class="t-org">Pajajaran Physical Society</div>
-                <ul>
-                  <li>Write and design physics articles on fluid dynamics, aerodynamics, climate, and more.</li>
-                  <li>Conducted physics experiments for high school students and university freshmen (2024).</li>
-                  <li>Appointed head of content writers for 2025; joined Board of Director since January 2025.</li>
-                </ul>
-              </div>
-            </div>
-            <div class="timeline-item">
-              <div class="t-date">Feb 2023 —<br>Dec 2024</div>
-              <div class="t-content">
-                <h3>Laboratory Teaching Assistant</h3>
-                <div class="t-org">Department of Physics, Universitas Padjadjaran</div>
-                <ul>
-                  <li>Taught ~100 students across 4 practical courses: Instrumentation, Electronics, and Programming.</li>
-                  <li>Head of Teaching Assistant for the Programming Course (Aug 2023 – Jun 2024).</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-          <h2 class="section-title">Skills</h2>
-          <div class="skills-grid">
-            <div class="skill-chip"><strong>Languages</strong>English (C1 · IELTS 7.0) · Indonesian (Native)</div>
-            <div class="skill-chip"><strong>Programming</strong>Python · R · SQL · Apps Script · NCL</div>
-            <div class="skill-chip"><strong>Analysis</strong>Data Analysis · Geospatial · Signal Processing · Statistical Methods</div>
-            <div class="skill-chip"><strong>ML &amp; Viz</strong>Machine Learning · Data Visualization · Tableau</div>
-            <div class="skill-chip"><strong>Design</strong>Figma · Graphic Design · Science Communication</div>
-            <div class="skill-chip"><strong>Tools</strong>Google Workspace · Microsoft Workspace · Power BI · Arduino / IoT</div>
-          </div>
+        <div class="viz-grid">
+          <!-- <button class="viz-card viz-card-tall" data-gallery="climate" aria-label="Open Compound Climate Extremes gallery">
+            <img src="assets/dataviz/chde/climate-02.svg" alt="Climate extremes visualization">
+            <span class="viz-meta"><strong>Thermal Inequalities in Indonesian Cities</strong></span>
+          </button> -->
+          <button class="viz-card viz-card-tall" data-gallery="climate" aria-label="Open Compound Climate Extremes gallery">
+            <img src="assets/dataviz/chde/chde-toe-map.png" alt="Climate extremes visualization">
+            <span class="viz-meta"><strong>Compound Climate Extremes</strong><small>Indonesia · CMIP6</small></span>
+          </button>
+          <button class="viz-card" data-gallery="fwi" aria-label="Open Fire Weather Index gallery">
+            <img src="assets/dataviz/fwi/fwi-01.png" alt="Fire Weather Index visualization">
+            <span class="viz-meta"><strong> <a href="https://antroposen.substack.com/p/karhutla-2026-dalam-data">Fire Weather Index in Kalimantan August 2026</a></strong><small>2026</small></span>
+          </button>
+          <!-- <button class="viz-card" data-gallery="ocean" aria-label="Open Ocean Dynamics gallery">
+            <img src="assets/dataviz/ocean-01.svg" alt="Ocean dynamics visualization">
+            <span class="viz-meta"><strong>Ocean Dynamics</strong><small>El Niño · Equatorial waves</small></span>
+          </button> -->
+          <button class="viz-card viz-card-tall" data-gallery="risk" aria-label="Open Climate Risk gallery">
+            <img src="assets/dataviz/climate-risk-agriculture/risk.png" alt="Climate risk visualization">
+            <span class="viz-meta">
+            <strong>
+              <a href="https://public.tableau.com/app/profile/thio/viz/climate-change-agricultural-risk/risk"
+                target="_blank"
+                rel="noreferrer">
+                Climate Risk ↗
+              </a>
+            </strong>
+            <small>Exposure · Vulnerability · Risk</small>
+            </span>
+          </button>
+
+          <button class="viz-card viz-card-tall" data-gallery="mlb-2024-war" aria-label="Open 2024 MLB WAR visualization">
+
+            <img
+              src="assets/dataviz/mlb-2024-war/image.png"
+              alt="WAR statistics of MLB players in 2024">
+
+            <span class="viz-meta">
+              <strong>
+                <a
+                  href="https://public.tableau.com/app/profile/thio/viz/MLBWar_17561183805260/Dashboard1"
+                  target="_blank"
+                  rel="noreferrer">
+                  2024 MLB Players WAR ↗
+                </a>
+              </strong>
+              <small>Sports Analytics · Baseball</small>
+            </span>
+
+          </button>
         </div>
-      </section>
+      </div>
+    </section>
+  </main>
 
-      <!-- ── Portfolio ── -->
-      <section class="page" id="page-portfolio">
-        <div class="page-inner">
-          <div class="page-label">03 — Portfolio</div>
-          <h1 class="hero">Projects &amp; <em>Work</em></h1>
-          <h2 class="section-title" style="margin-top:0;border-top:none;padding-top:0">Research</h2>
-          <div class="research-item">
-            <div class="ri-type">Undergraduate Thesis</div>
-            <div class="ri-title">Analysis of Equatorial Waves Energy during the 2023/24 El Niño Using the FFT-EOF Approach</div>
-            <div class="ri-meta">Author: Thio Fahrizqi · 2025</div>
-          </div>
-          <div class="research-item">
-            <div class="ri-type">In Preparation</div>
-            <div class="ri-title">Investigating the projection of precipitation whiplash occurrence over the Indonesian Maritime Continent based on CMIP6 simulation</div>
-            <div class="ri-meta">In preparation · 2025</div>
-          </div>
-          <h2 class="section-title">Projects</h2>
-          <div class="projects-grid">
-            <a class="project-card" href="https://www.researchgate.net/publication/395674371" target="_blank">
-              <div class="pc-tag">IoT · Hardware</div>
-              <div class="pc-title">Photobioreactor as Carbon Capture</div>
-              <p class="pc-desc">IoT-integrated Spirulina Sp. photobioreactor prototype with RO/PDMS membrane and micro-nano bubbles for carbon capture. Submitted to PIMNAS 2024.</p>
-              <div class="pc-link">Patent no. S00202409022 ↗</div>
-            </a>
-            <a class="project-card" href="https://drive.google.com/file/d/1km-bc4tzjv1O0_UCEXI3fDd0IiTpuS1Z/view" target="_blank">
-              <div class="pc-tag">Writing · Education</div>
-              <div class="pc-title">Climate Change Book</div>
-              <p class="pc-desc">Educational book for students aged 10–12, covering the basics of climate change, adaptation, and mitigation. Part of the Green Welfare initiative.</p>
-              <div class="pc-link">View Report ↗</div>
-            </a>
-            <a class="project-card" href="https://online.fliphtml5.com/pps_society/Jupyter-Magazine" target="_blank">
-              <div class="pc-tag">Science Comm · Writing</div>
-              <div class="pc-title">Physics Magazine</div>
-              <p class="pc-desc">
-                I contributed to the articles on the imagining the light-speed travel, 
-                the record-breaking temperatures of 2024, 
-                and and the life and contributions of physicist Lise Meitner.</p>
-              <div class="pc-link">Read the Magazine ↗</div>
-            </a>
-            <div class="project-card" style="cursor:default">
-              <div class="pc-tag">Data Science</div>
-              <div class="pc-title">Data Visualizations</div>
-              <p class="pc-desc">Collection of data visualizations and analyses on topics spanning climate, energy, physics, and sports — built with Python, R, and Tableau.</p>
-              <div class="pc-link" style="color:var(--faint)">Coming soon</div>
-            </div>
-
-            
-          </div>
-        </div>
-      </section>
+  <!-- Data Viz modal -->
+  <div class="viz-modal" id="viz-modal" aria-hidden="true">
+    <button class="modal-close" id="modal-close" aria-label="Close gallery">×</button>
+    <button class="modal-arrow modal-prev" id="modal-prev" aria-label="Previous image">←</button>
+    <div class="modal-content" role="dialog" aria-modal="true" aria-labelledby="modal-caption">
+      <div class="modal-counter" id="modal-counter">01 / 01</div>
+      <img id="modal-image" class="modal-image" src="" alt="">
+      <div class="modal-caption" id="modal-caption"></div>
     </div>
+    <button class="modal-arrow modal-next" id="modal-next" aria-label="Next image">→</button>
   </div>
 
-  <!-- Graph Data -->
-  <script src="data/graph-data.js" defer></script>
-
-  <!-- UI -->
-  <script src="js/navigation.js" defer></script>
-  <script src="js/theme.js" defer></script>
-
-  <!-- Graph -->
-  <script src="js/graph.js" defer></script>
-
-  <!-- App Initialization -->
-  <script src="js/main.js" defer></script>
-
-
-
+  <script src="js/navigation.js"></script>
+  <script src="js/theme.js"></script>
+  <script src="js/main.js"></script>
 </body>
 </html>
